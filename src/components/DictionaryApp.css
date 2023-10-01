@@ -1,0 +1,129 @@
+/* src/DictionaryApp.css */
+.dictionary-app {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dictionary-app:hover {
+    background-color: #e8e8e8;
+  }
+  
+  h1 {
+    font-size: 28px;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  input[type="text"] {
+    width: 70%;
+    padding: 12px;
+    border: 2px solid #007bff;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #0056b3;
+  }
+  
+  button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .definition {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .definition:hover {
+    transform: scale(1.02);
+  }
+  
+  .phonetics {
+    margin-top: 20px;
+  }
+  
+  .phonetics div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .phonetics p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  audio {
+    margin-left: 10px;
+  }
+  
+  .meanings {
+    margin-top: 20px;
+  }
+  
+  .meanings h2 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .meanings ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .meanings li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-left: 4px solid #007bff;
+    padding-left: 10px;
+  }
+  
+  .example {
+    color: #777;
+    font-style: italic;
+  }
+  
+  @media screen and (max-width: 768px) {
+    input[type="text"] {
+      width: 100%;
+    }
+  }
+  
